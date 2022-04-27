@@ -51,7 +51,7 @@
 			
  <?php
 
-include("/home/smtvscom/public_html/img-admin/db.php"); 
+include("db.php"); 
 
 
   $query ="SELECT * FROM image_record ORDER BY RAND(id)    ";
