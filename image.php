@@ -3,11 +3,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Image <Gallery/title>
+<title>SMTVS Image </title>
+ <META name=Search.Vertical content=" VGA Images Gallery ">
+<meta name="Author" content="VanGunt Allen - @gmail.com" />
+<META name=Search.PageType content=" index ">
+<META name=PackageEnabled content=True>
 
 
+		
+	
+		
 	
 	
+
 
 <link rel="stylesheet" href="https://smtvs.com/bootstrap.min.css">
 <script src="https://smtvs.com/bootstrap.bundle.min.js"></script>
@@ -15,10 +23,10 @@
 </head>
 <body>
 
-	
+	<p><p><br>
 		<p><p><br>
 
- <h3 class="fw-light text-center text-lg-start mt-4 mb-0"> Image to Gallery</h3>
+ <h5 class="fw-light text-center text-lg-start mt-4 mb-0">&nbsp;&nbsp; Web Gallery</h5>
 
 <table>
   <tr>
@@ -28,7 +36,9 @@
   <tr>
     <td>      
 
-	
+		
+ 
+
 		
 <!-- Page Content -->
 <div class="container">
@@ -41,7 +51,7 @@
 			
  <?php
 
-include("db.php"); 
+include("/home/smtvscom/public_html/img-admin/db.php"); 
 
 
   $query ="SELECT * FROM image_record ORDER BY RAND(id)    ";
@@ -54,7 +64,7 @@ echo "<div class=\"column\">";
     
 
      echo " <a href=\"#\" class=\"d-block mb-7 h-100\" >";
-    echo "    <img class=\"img-fluid img-thumbnail\" src=\"$posts[images]\" alt=\"$posts[fname]\" onclick=\"myFunction(this);\">";
+    echo "    <img class=\"img-fluid img-thumbnail\" src=\"https://smtvs.com/img-admin/$posts[images]\" alt=\"$posts[fname]\" onclick=\"myFunction(this);\">";
    echo "  $posts[des] </a>
     </div></div>";
 		 }
